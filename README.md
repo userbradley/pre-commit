@@ -2,11 +2,22 @@
 
 <!-- TOC -->
 * [Pre-commit hooks](#pre-commit-hooks)
+  * [Using](#using)
   * [Snippets](#snippets)
     * [Core Rules](#core-rules)
     * [Correct Examples](#correct-examples)
     * [Incorrect examples](#incorrect-examples)
 <!-- TOC -->
+
+## Using
+
+```yaml
+repos:
+  - repo: https://github.com/userbradley/pre-commit
+    rev: v0.0.4
+    hooks:
+      - id: check-snippets
+```
 
 ## Snippets
 
