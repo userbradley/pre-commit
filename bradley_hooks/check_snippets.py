@@ -75,7 +75,7 @@ def main():
     files_to_check = sys.argv[1:]
 
     if not files_to_check:
-        sys.exit(0)
+        return 0 # Success
 
     overall_has_errors = False
     for f in files_to_check:
@@ -83,9 +83,9 @@ def main():
             overall_has_errors = True
 
     if overall_has_errors:
-        sys.exit(1)
+        return 1 # Failure
 
-    sys.exit(0)
+    return 0 # Success
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

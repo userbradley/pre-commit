@@ -1,6 +1,6 @@
 # .pre-commit-hooks.yaml
 - id: check-snippets
   name: Check Snippets
-  description: "Validates snippet tags like [START tag] and [END tag] are properly paired and not nested."
-  entry: scripts/check_snippets.py
+  description: "Validates snippet tags like [START tag] and [END tag]."
+  entry: check-snippets # <-- Use the console_script name here
   language: python

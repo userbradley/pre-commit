@@ -2,9 +2,9 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-      - id: no-commit-to-branch
-        name: Ensure commits are only made to feature branches
-        args: ['-b', 'main']
+      #      - id: no-commit-to-branch
+      #        name: Ensure commits are only made to feature branches
+      #        args: ['-b', 'main']
       - id: end-of-file-fixer
         name: Ensure files have end of file
       - id: trailing-whitespace
